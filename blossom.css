@@ -1,0 +1,31 @@
+/**
+ * @name Blossom
+ * @description white and pink theme
+ */
+
+:root {
+    --bg-primary: #FFE4F0;
+    --bg-secondary: #FFC4DA;
+    --bg-accent: #FF8CB8;
+    --text-color: #3A1E29;
+    --button-bg: #FF93C6;
+    --button-hover: #FFB6DA;
+    --highlight: #FFF0F6;
+}
+
+.styles__background___2J-JA-camelCase,
+.styles__sidebar___1XqWi-camelCase,
+.styles__container___1BPm9-camelCase,
+textarea,
+input,
+#searchInput,
+.toastMessage {
+    background: linear-gradient(140deg, var(--bg-primary), var(--bg-secondary), var(--bg-accent)) !important;
+    color: var(--text-color) !important;
+}
+
+.styles__button___2hNZo-camelCase,
+.styles__buttonFilled___23Dcn-camelCase {
+    background: linear-gradient(135deg, var(--button-bg), var(--button-hover)) !important;
+    color: var(--text-color) !important;
+}
