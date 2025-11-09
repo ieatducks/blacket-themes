@@ -1,0 +1,54 @@
+/**
+ * @name Ocean
+ * @description cool blue lookin theme
+ * @author ieatducks
+ */
+
+:root {
+    --bg-primary: #00BFFF;
+    --bg-secondary: #1E90FF;
+    --bg-accent: #4682B4;
+    --text-color: #E0FFFF;
+    --button-bg: #20B2AA;
+    --button-hover: #5F9EA0;
+    --highlight: #00CED1;
+}
+
+/* Main backgrounds */
+.styles__background___2J-JA-camelCase,
+.styles__sidebar___1XqWi-camelCase,
+.styles__container___1BPm9-camelCase,
+.styles__container___2VzTy-camelCase,
+.styles__container___3St5B-camelCase,
+.styles__blookGridContainer___AK47P-camelCase,
+.styles__bazaarItems___KmNa2-camelCase,
+.styles__chatRoomsListContainer___Gk4Av-camelCase,
+.styles__chatRoomsTitle___fR4Av-camelCase,
+.styles__chatRooms___o5ASb-camelCase,
+.styles__postsContainer___39_IQ-camelCase,
+.styles__profileContainer___CSuIE-camelCase,
+.styles__profileDropdownMenu___2jUAA-camelCase,
+.styles__profileDropdownOption___ljZXD-camelCase,
+.styles__statsContainer___QnrRB-camelCase,
+.styles__tradingContainer___B1ABS-camelCase,
+textarea,
+input,
+#searchInput,
+.toastMessage {
+    background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary), var(--bg-accent)) !important;
+    color: var(--text-color) !important;
+}
+
+/* Buttons */
+.styles__button___2hNZo-camelCase,
+.styles__buttonFilled___23Dcn-camelCase {
+    background: linear-gradient(135deg, var(--button-bg), var(--button-hover)) !important;
+    color: var(--text-color) !important;
+    font-weight: bold;
+}
+
+.styles__buttonInside___39vdp-camelCase,
+.styles__front___vcvuy-camelCase {
+    background-color: var(--text-color) !important;
+    color: var(--button-bg) !important;
+}
