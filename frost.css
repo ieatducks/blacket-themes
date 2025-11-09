@@ -1,0 +1,31 @@
+/**
+ * @name Frost
+ * @description blue and white theme
+ */
+
+:root {
+    --bg-primary: #E8F6FF;
+    --bg-secondary: #A8D4F2;
+    --bg-accent: #5CA8E6;
+    --text-color: #0D2A3F;
+    --button-bg: #7EC2FF;
+    --button-hover: #A0D8FF;
+    --highlight: #FFFFFF;
+}
+
+.styles__background___2J-JA-camelCase,
+.styles__sidebar___1XqWi-camelCase,
+.styles__container___1BPm9-camelCase,
+textarea,
+input,
+#searchInput,
+.toastMessage {
+    background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary), var(--bg-accent)) !important;
+    color: var(--text-color) !important;
+}
+
+.styles__button___2hNZo-camelCase,
+.styles__buttonFilled___23Dcn-camelCase {
+    background: linear-gradient(135deg, var(--button-bg), var(--button-hover)) !important;
+    color: var(--text-color) !important;
+}
