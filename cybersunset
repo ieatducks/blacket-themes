@@ -1,0 +1,33 @@
+/**
+ * @name Cyber Sunset
+ * @description pink, purple, blue, and orange theme
+ * @author ieatducks
+ */
+
+:root {
+    --bg-primary: #FF0080;
+    --bg-secondary: #FF7F50;
+    --bg-accent: #8A2BE2;
+    --text-color: #F0F0F0;
+    --button-bg: #FF00FF;
+    --button-hover: #00FFFF;
+    --highlight: #FFD700;
+}
+
+.styles__background___2J-JA-camelCase,
+.styles__sidebar___1XqWi-camelCase,
+.styles__container___1BPm9-camelCase,
+textarea,
+input,
+#searchInput,
+.toastMessage {
+    background: linear-gradient(150deg, var(--bg-primary), var(--bg-accent), var(--bg-secondary)) !important;
+    color: var(--text-color) !important;
+}
+
+.styles__button___2hNZo-camelCase,
+.styles__buttonFilled___23Dcn-camelCase {
+    background: linear-gradient(135deg, var(--button-bg), var(--button-hover)) !important;
+    color: var(--text-color) !important;
+    font-weight: bold;
+}
