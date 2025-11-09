@@ -1,0 +1,34 @@
+/**
+ * @name Aurora
+ * @description northern lights inspired theme
+ * @author ieatducks
+ */
+
+:root {
+    --bg-primary: #0B1C3F;
+    --bg-secondary: #0FCFC0;
+    --bg-accent: #7F00FF;
+    --text-color: #E0FFE0;
+    --button-bg: #32CD32;
+    --button-hover: #7FFF00;
+    --highlight: #A0FFFF;
+}
+
+.styles__background___2J-JA-camelCase,
+.styles__sidebar___1XqWi-camelCase,
+.styles__container___1BPm9-camelCase,
+.styles__blookGridContainer___AK47P-camelCase,
+textarea,
+input,
+#searchInput,
+.toastMessage {
+    background: linear-gradient(160deg, var(--bg-primary), var(--bg-accent), var(--bg-secondary)) !important;
+    color: var(--text-color) !important;
+}
+
+.styles__button___2hNZo-camelCase,
+.styles__buttonFilled___23Dcn-camelCase {
+    background: linear-gradient(135deg, var(--button-bg), var(--button-hover)) !important;
+    color: var(--text-color) !important;
+    font-weight: bold;
+}
