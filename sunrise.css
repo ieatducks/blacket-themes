@@ -1,91 +1,112 @@
-let css = `
-    .styles__blooketText___1pMBG-camelCase {
-        font-size: 40px;
-        font-family: Titan One, sans-serif;
-        text-decoration: none;
-        color: #FFDAB9; /* peach text */
-        filter: drop-shadow(0px 0px 8px #FF4500);
-        margin-bottom: 20px;
-        text-align: center;
-    }
+/**
+ * @name Sunrise
+ * @description Sunrise gradient theme for BetterBlacket.
+ * @author ieatducks
+ */
 
-    .styles__background___2J-JA-camelCase {
-        background: linear-gradient(135deg, #FF6E6E, #FFB347, #FFD700) !important;
-    }
-
-    .styles__bazaarItem___Meg69-camelCase {
-        background-color: #FF8C00 !important;
-        transition: 0.2s ease-in-out;
-    }
-
-    .styles__bazaarItem___Meg69-camelCase:hover {
-        background-color: #FFA500 !important;
-        transform: scale(1.05);
-    }
-
-    .styles__bazaarItems___KmNa2-camelCase,
-    .styles__blookGridContainer___AK47P-camelCase,
-    .styles__container___1BPm9-camelCase,
-    .styles__container___2VzTy-camelCase,
-    .styles__container___3St5B-camelCase,
-    .styles__chatRoomsListContainer___Gk4Av-camelCase,
-    .styles__chatRoomsTitle___fR4Av-camelCase,
-    .styles__chatRooms___o5ASb-camelCase,
-    .styles__postsContainer___39_IQ-camelCase,
-    .styles__profileContainer___CSuIE-camelCase,
-    .styles__profileDropdownMenu___2jUAA-camelCase,
-    .styles__profileDropdownOption___ljZXD-camelCase,
-    .styles__sidebar___1XqWi-camelCase,
-    .styles__statsContainer___QnrRB-camelCase,
-    .styles__tradingContainer___B1ABS-camelCase,
-    textarea,
-    input,
-    #searchInput,
-    .toastMessage {
-        background-color: #FF4500 !important;
-    }
-
-    .styles__button___2hNZo-camelCase,
-    .styles__buttonFilled___23Dcn-camelCase {
-        background-color: #FF6347 !important;
-        color: #FFF8DC !important;
-    }
-
-    .styles__buttonInside___39vdp-camelCase,
-    .styles__front___vcvuy-camelCase {
-        background-color: #FFF8DC !important;
-        color: #FF6347 !important;
-    }
-
-    .styles__chatEmojiButton___8RFa2-camelCase,
-    .styles__chatUploadButton___g39Ac-camelCase {
-        background-color: #FF6347 !important;
-        transition: 0.2s ease-in-out;
-    }
-
-    .styles__chatEmojiButton___8RFa2-camelCase:hover,
-    .styles__chatUploadButton___g39Ac-camelCase:hover {
-        background-color: #FF7F50 !important;
-    }
-
-    .styles__edge___3eWfq-camelCase,
-    .styles__horizontalBlookGridLine___4SAvz-camelCase,
-    .styles__verticalBlookGridLine___rQWaZ-camelCase,
-    hr {
-        background-color: #FFD700 !important;
-    }
-
-    .styles__loginButton___1e3jI-camelCase,
-    .styles__signUpButton___3_ch3-camelCase {
-        background-color: #FFD700 !important;
-        color: #FF4500 !important;
-    }
-
-    .styles__rightButtonInside___14imT-camelCase {
-        color: #FFD700 !important;
-    }
-`;
-, .styles__button___2xz0I-camelCase:hover {
-    background-color: var(--button-hover);
+:root {
+    --bg-primary: #FF6E6E;
+    --bg-secondary: #FFB347;
+    --bg-accent: #FFD700;
+    --text-color: #FFFFFF;
+    --button-bg: #FF8C00;
+    --button-hover: #FFA500;
+    --highlight: #FF4500;
 }
-`;
+
+/* Main backgrounds */
+.styles__background___2J-JA-camelCase,
+.styles__sidebar___1XqWi-camelCase,
+.styles__container___1BPm9-camelCase,
+.styles__container___2VzTy-camelCase,
+.styles__container___3St5B-camelCase,
+.styles__blookGridContainer___AK47P-camelCase,
+.styles__bazaarItems___KmNa2-camelCase,
+.styles__chatRoomsListContainer___Gk4Av-camelCase,
+.styles__chatRoomsTitle___fR4Av-camelCase,
+.styles__chatRooms___o5ASb-camelCase,
+.styles__postsContainer___39_IQ-camelCase,
+.styles__profileContainer___CSuIE-camelCase,
+.styles__profileDropdownMenu___2jUAA-camelCase,
+.styles__profileDropdownOption___ljZXD-camelCase,
+.styles__statsContainer___QnrRB-camelCase,
+.styles__tradingContainer___B1ABS-camelCase,
+textarea,
+input,
+#searchInput,
+.toastMessage {
+    background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary), var(--bg-accent)) !important;
+    color: var(--text-color) !important;
+}
+
+/* Blooket Text */
+.styles__blooketText___1pMBG-camelCase {
+    font-family: Titan One !important;
+    font-size: 2.383vw !important;
+    text-align: center;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 0px 8px var(--highlight));
+}
+
+/* Buttons */
+.styles__button___2hNZo-camelCase,
+.styles__buttonFilled___23Dcn-camelCase {
+    background: linear-gradient(135deg, var(--button-bg), var(--button-hover)) !important;
+    color: var(--text-color) !important;
+    font-weight: bold;
+}
+
+.styles__buttonInside___39vdp-camelCase,
+.styles__front___vcvuy-camelCase {
+    background-color: var(--text-color) !important;
+    color: var(--button-bg) !important;
+}
+
+.styles__button___2hNZo-camelCase:hover,
+.styles__buttonFilled___23Dcn-camelCase:hover,
+.styles__pageButton___1wFuu-camelCase:hover {
+    background-color: rgba(0,0,0,0.6) !important;
+    color: #fff !important;
+    transition: 0.7s cubic-bezier(0, 1.46, 0.58, 1);
+}
+
+/* Bazaar Items */
+.styles__bazaarItem___Meg69-camelCase {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-accent)) !important;
+    transition: 0.2s ease-in-out;
+}
+
+.styles__bazaarItem___Meg69-camelCase:hover {
+    background: linear-gradient(135deg, var(--bg-accent), var(--bg-secondary)) !important;
+    transform: scale(1.05);
+}
+
+/* Highlights / edges */
+.styles__edge___3eWfq-camelCase,
+.styles__horizontalBlookGridLine___4SAvz-camelCase,
+.styles__verticalBlookGridLine___rQWaZ-camelCase,
+hr {
+    background-color: var(--highlight) !important;
+}
+
+/* Login / Sign Up Buttons */
+.styles__loginButton___1e3jI-camelCase,
+.styles__signUpButton___3_ch3-camelCase {
+    background: linear-gradient(135deg, var(--button-bg), var(--button-hover)) !important;
+    color: var(--text-color) !important;
+}
+
+/* Token icon */
+.styles__tokenBalanceIcon___3MGhs-camelCase {
+    content: url("/content/tokenIcon.webp");
+}
+
+/* Context menus */
+.styles__contextMenuContainer___3jAmv-camelCase {
+    background-color: var(--bg-secondary) !important;
+    border-color: #fff !important;
+    border-style: solid !important;
+    border-radius: 6px !important;
+    border-width: 3px !important;
+    font-weight: bold;
+}
