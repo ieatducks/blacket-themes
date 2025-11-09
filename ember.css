@@ -1,0 +1,32 @@
+/**
+ * @name Ember
+ * @description dark orange and black theme
+ * @author …
+ */
+
+:root {
+    --bg-primary: #2B1B1B;
+    --bg-secondary: #4A2A16;
+    --bg-accent: #FF6A00;
+    --text-color: #FFE6D1;
+    --button-bg: #FF8C42;
+    --button-hover: #FFA05C;
+    --highlight: #FFD7AE;
+}
+
+.styles__background___2J-JA-camelCase,
+.styles__sidebar___1XqWi-camelCase,
+.styles__container___1BPm9-camelCase,
+textarea,
+input,
+#searchInput,
+.toastMessage {
+    background: linear-gradient(145deg, var(--bg-primary), var(--bg-secondary), var(--bg-accent)) !important;
+    color: var(--text-color) !important;
+}
+
+.styles__button___2hNZo-camelCase,
+.styles__buttonFilled___23Dcn-camelCase {
+    background: linear-gradient(135deg, var(--button-bg), var(--button-hover)) !important;
+    color: var(--text-color) !important;
+}
